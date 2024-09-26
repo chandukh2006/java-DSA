@@ -1,0 +1,19 @@
+#finding minimum element
+public class Search{
+    public static void main(String[] args){
+        int num[]={10,20,633,66,3,-2,-99};
+        int minimum=min(num);
+        System.out.println(minimum);
+
+
+    }
+    static int min(int[] arr){
+        int answer=arr[0];
+        for(int i =1;i<arr.length;i++){
+            if(arr[i]<answer){
+                answer=arr[i];
+                
+            }
+        }return answer;
+    }
+}
