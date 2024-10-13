@@ -1,4 +1,4 @@
-//swaping of two numbers using temp variable
+1.>>>//swaping of two numbers using temp variable
 public class Student{
     public static void main(String[] args){
         int a = 10, b = 20;
@@ -11,3 +11,12 @@ public class Student{
     }
 
 }
+2.>>>  //by using  bitwise XOR(^) operator
+a = a^b; //10^20=30
+b = a^b; //30^20=10
+a = a^b; //30^10=20
+
+
+3.>>>  //only in single statement
+b = a+b-(a=b);
+
