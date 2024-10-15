@@ -1,0 +1,30 @@
+# 1) largest element in an array  TC O(NlogN) ,SC O(1)
+import java.util.Arrays;
+public class Student{
+    public static void main(String [] args){
+        int[] arr ={90,500,12,3,40,5,2,1};
+        int largest=arr[0];
+        Arrays.sort(arr);
+        
+            
+     largest=arr[arr.length-1];
+     System.out.println(largest);
+            
+        
+
+    }  
+}
+# 2) for optimal solution TC O(N)
+import java.util.Arrays;
+public class Student{
+    public static void main(String [] args){
+        int[] arr ={90,500,12,3,40,5,2,1};
+        int largest=arr[0];
+     for(int i=1 ;i<arr.length;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+            System.out.println(largest);
+        }
+     }
+ }  
+}
