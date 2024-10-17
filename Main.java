@@ -1,23 +1,21 @@
-#Similarly for strings
+import java.util.Scanner;
+
 public class Main{
-    public static void main(String[] args){
-        String name="chandu";
-        char target='h';
-    
-        System.out.println(Linear(name, target));
-       
 
-    }
-    static boolean Linear(String str,char target){
-        if(str.length()==0){
-            return false;
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
+
+        if (isEven(number)) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
         }
-        for(int i=0;i<str.length();i++){
-            if(target==str.charAt(i)){
-                return true;
-            }
-        }
-        return false;
     }
 
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
 }
