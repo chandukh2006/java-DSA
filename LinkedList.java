@@ -31,6 +31,9 @@ public class LinkedList{
         }
         size ++;
     }
+       public int getSize() {
+        return size;
+    }
     public void printList(){
         Node temp = head;
         while(temp!=null){
@@ -46,6 +49,7 @@ public class LinkedList{
         list.addFirst(20);
          list.addFirst(30);
          list.printList();
+         System.out.println("Size of the list: " + list.getSize());
 
     }
 }
